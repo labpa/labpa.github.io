@@ -2,7 +2,6 @@ import React from 'react';
 
 
 function App() {
-  console.log("Fick dich welt");
   return (
       <div>
         <h1>labpa</h1>
