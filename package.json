@@ -13,7 +13,7 @@
     "@types/react-dom": "^18.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
@@ -45,5 +45,9 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/labpa/labpa.github.io.git",
+  "author": "Pascal <pbienenstein@posteo.de>",
+  "license": "MIT"
 }

@@ -2,6 +2,7 @@ import React from 'react';
 
 
 function App() {
+    console.log("Test");
   return (
       <div>
         <h1>labpa</h1>
