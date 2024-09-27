@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/labpa/static/js/main.371b215a.js",
+    "main.js": "/labpa/static/js/main.4441f957.js",
     "static/js/453.ebf1f395.chunk.js": "/labpa/static/js/453.ebf1f395.chunk.js",
     "index.html": "/labpa/index.html",
-    "main.371b215a.js.map": "/labpa/static/js/main.371b215a.js.map",
+    "main.4441f957.js.map": "/labpa/static/js/main.4441f957.js.map",
     "453.ebf1f395.chunk.js.map": "/labpa/static/js/453.ebf1f395.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.371b215a.js"
+    "static/js/main.4441f957.js"
   ]
 }
