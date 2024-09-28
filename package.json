@@ -1,5 +1,5 @@
 {
-  "homepage": "http://labpa.github.io/labpa",
+  "homepage": "http://labpa.github.io",
   "name": "labpa",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +11,9 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "bootstrap": "^5.3.3",
     "react": "^18.3.1",
+    "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
     "typescript": "^4.4.2",
