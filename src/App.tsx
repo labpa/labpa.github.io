@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from "./Components/Navigation";
+import "./App.css";
 
 // Pages
 import Dashboard from "./Pages/Dashboard";
