@@ -15,7 +15,7 @@ import Contact from "./Pages/Contact";
 const App: FC = () => {
     return (
         <div className="d-flex flex-column min-vh-100"> {/* Flex Container für das gesamte Layout */}
-            <div className="container-sm flex-grow-1"> {/* Container für den Inhalt */}
+            <div className="flex-grow-1"> {/* Container für den Inhalt */}
                 <Navigation />
 
                 <Routes>
