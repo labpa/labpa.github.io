@@ -10,6 +10,7 @@ const Navigation = () => {
                 <Navbar.Collapse id={"basic-navbar-nav"}>
                     <Nav className={"me-auto"}>
                         <NavLink className={"nav-link"} to={"AboutMe"}>Über Mich</NavLink>
+                        <NavLink className={"nav-link"} to={"Curriculum"}>Lebenslauf</NavLink>
                         <NavLink className={"nav-link"} to={"Projects"}>Projekte</NavLink>
                     </Nav>
                 </Navbar.Collapse>

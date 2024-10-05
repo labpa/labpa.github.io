@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 import Impressum from "./Components/Impressum";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
+import Curriculum from "./Pages/Curriculum";
 
 const App: FC = () => {
     return (
@@ -24,6 +25,7 @@ const App: FC = () => {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/impressum" element={<Impressum />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/curriculum" element={<Curriculum/>}/>
                 </Routes>
             </div>
 
