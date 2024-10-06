@@ -1,11 +1,16 @@
 import React, {FC} from "react";
+import {Container} from "react-bootstrap";
+import ParticlesComponent from "../Components/particles";
+import Image from "react-bootstrap/Image";
+import logo from "../Images/labpa.jpg";
 
 
 const Projects : FC = () => {
     return(
-        <div className={"container-sm"}>
-            <h1>Projekte</h1>
-        </div>
+        <Container className="container-sm d-flex flex-column justify-content-center align-items-center text-center p-3">
+            <ParticlesComponent id="particles" />
+            <h1 className="mb-3 text-white">Projekte</h1>
+        </Container>
     )
 }
 
