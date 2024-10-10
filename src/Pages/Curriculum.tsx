@@ -24,12 +24,12 @@ const Corriculum: FC = () => {
             <div className="container-sm content">
                 <Row>
                     <Col>
-                        <h2 className={"text-justify"}>Fähigkeiten</h2>
+                        <h2>Fähigkeiten</h2>
                     </Col>
                     <Col>
                         <ul>
                             <li>
-                                <h3>PWA-Entwicklung</h3>
+                                <h3>Entwicklung von progressiven Web-Applikationen (PWA) mit folgenden Technologien</h3>
                             </li>
                             <li>
                                 <h3>React</h3>
@@ -76,7 +76,7 @@ const Corriculum: FC = () => {
 
                 <Row>
                     <Col>
-                        <h2 className={"text-justify"}>Berufserfahrung</h2>
+                        <h2>Berufserfahrung</h2>
                     </Col>
                     <Col>
                         <ul>
