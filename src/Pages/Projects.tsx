@@ -45,7 +45,7 @@ const Projects : FC = () => {
                     </Carousel>
                     <Card.Text>
                         Implementierung einer Software für ein Terminal zur Abfrage von Arbeitszeiten und Informationen
-                        zur anstehenden Schicht mit Hilfe von NFC-Technologie
+                        zur anstehenden Schicht mit Hilfe von NFC-Technologie für das Fusion-Festival
                     </Card.Text>
                     <Link to={"https://github.com/labpa/Abfrage-KuKo"}>
                         <Button style={{width: '350px', backgroundColor:"black", border:"1px solid white", color:"#39868e"}}>GitHub Abfrage Terminal</Button>
@@ -70,15 +70,13 @@ const Projects : FC = () => {
                         </Carousel.Item>
                     </Carousel>
                     <Card.Text>
-                        Fartenbuch erstellt mit React und Typescript. Übungsprojekt während der Ausbildung.
+                        Fartenbuch für den Kulturkosmos Müritz e.V, erstellt mit React und Typescript. Übungsprojekt während der Ausbildung.
                     </Card.Text>
                     <Link to={"https://github.com/labpa/Fahrtenbuch-KuKo.git"}>
                         <Button style={{width: '350px', backgroundColor:"black", border:"1px solid white", color:"#39868e"}}>GitHub Fahrtenbuch</Button>
                     </Link>
                 </Card.Body>
             </Card>
-
-
         </Container>
     )
 }

@@ -14,7 +14,7 @@ const Dashboard: FC = () => {
             <ParticlesComponent id="particles" />
             <h1 className="mb-3 text-white">Pascal Bienenstein</h1>
             <h2 className="mb-4 text-white">Softwareentwickler aus Leipzig</h2>
-            <p className="text-white">Auf dieser Seite finden Sie bald Informationen über mich und aktuelle Projekte.</p>
+            <p className="text-white">Auf dieser Seite finden Sie Informationen über mich und aktuelle Projekte.</p>
             {/*<Image src={foto} rounded width={250} height={300} /> /!* Set width and height as needed *!/*/}
             <Image src={logo} rounded width={200} height={200} /> {/* Set width and height as needed */}
         </Container>

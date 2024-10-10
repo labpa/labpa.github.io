@@ -22,32 +22,56 @@ const Corriculum: FC = () => {
 
 
             <div className="container-sm content">
-                {/*<Row>*/}
-                {/*    <Col>*/}
-                {/*        <h2 className={"text-justify"}>Fähigkeiten</h2>*/}
-                {/*    </Col>*/}
-                {/*    <Col>*/}
-                {/*        <ul>*/}
-                {/*            <li>*/}
-                {/*                <h3>dfsgfrg</h3>*/}
-                {/*            </li>*/}
-                {/*            <li>*/}
-                {/*                <h3>2016 - 2022 Selbstständiger Monteur - Internationale Umsetzung von Spezialmontagen*/}
-                {/*                    für Film, Theather und Festivals. </h3>*/}
-                {/*            </li>*/}
-                {/*            <li>*/}
-                {/*                <h3>2015 - 2019 Gästebetreuer im Sicherheitsdienst – Internationaler Club, Berlin </h3>*/}
-                {/*            </li>*/}
-                {/*            <li>*/}
-                {/*                <h3>2007 - 2015 Vorarbeiter und Baustellenleiter im Garten- und Landschaftsbau –*/}
-                {/*                    Stuttgart, Wien, Berlin</h3>*/}
-                {/*            </li>*/}
-                {/*        </ul>*/}
+                <Row>
+                    <Col>
+                        <h2 className={"text-justify"}>Fähigkeiten</h2>
+                    </Col>
+                    <Col>
+                        <ul>
+                            <li>
+                                <h3>PWA-Entwicklung</h3>
+                            </li>
+                            <li>
+                                <h3>React</h3>
+                            </li>
+                            <li>
+                                <h3>TypeScript</h3>
+                            </li>
+                            <li>
+                                <h3>JavaScript</h3>
+                            </li>
+                            <li>
+                                <h3>HTML</h3>
+                            </li>
+                            <li>
+                                <h3>CSS</h3>
+                            </li>
+                            <li>
+                                <h3>Bootstrap</h3>
+                            </li>
+                            <li>
+                                <h3>SQL</h3>
+                            </li>
+                            <li>
+                                <h3>MariaDB</h3>
+                            </li>
+                            <li>
+                                <h3>Supabase</h3>
+                            </li>
+                            <li>
+                                <h3>Java</h3>
+                            </li>
+                            <li>
+                                <h3>C#</h3>
+                            </li>
 
 
-                {/*    </Col>*/}
-                {/*</Row>*/}
-                {/*<hr style={{borderColor: "#39868E"}} className="border-end border-2 opacity-75"/>*/}
+                        </ul>
+
+
+                    </Col>
+                </Row>
+                <hr style={{borderColor: "#39868E"}} className="border-end border-2 opacity-75"/>
 
 
                 <Row>
