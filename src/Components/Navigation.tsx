@@ -1,7 +1,10 @@
 import {Container, Nav, Navbar} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
+import {useAppSelector} from "../app/hooks";
 
 const Navigation = () => {
+    const {userinfo} = useAppSelector((state) => state.auth);
+
     const linkStyle = {
         color: "#edecd8",
         textDecoration: "none",

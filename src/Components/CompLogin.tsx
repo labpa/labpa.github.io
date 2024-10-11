@@ -20,8 +20,7 @@ const CompLogin : FC = () => {
         e?.preventDefault();
         login({ email, password}).unwrap().then((response)=> {
             dispatch(setCredentials(response));
-            // navigate("/onlinefahrtenbuch");
-            console.log("angemeldet");
+            navigate("/angemeldet");
         }).catch(error =>{
             console.error(error);
             setError("Anmeldung fehlgeschlagen! Bitte überprüfe deine E-Mail-Adresse und dein Passwort.");

@@ -13,6 +13,8 @@ import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Curriculum from "./Pages/Curriculum";
 import Signin from "./Pages/signin";
+import ProtectedRoute from "./Pages/protection/ProtectedRoute";
+import Angemeldet from "./Pages/Angemeldet";
 
 const App: FC = () => {
     return (
@@ -28,6 +30,15 @@ const App: FC = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/curriculum" element={<Curriculum/> }/>
                     <Route path="/signin" element={<Signin/>}/>
+
+                    //Ab hier nur nach Login
+                    <Route element={<ProtectedRoute/>}>
+                        <Route path={"/angemeldet"} element={<Angemeldet/>}/>
+
+                    </Route>
+
+
+
                 </Routes>
             </div>
 
