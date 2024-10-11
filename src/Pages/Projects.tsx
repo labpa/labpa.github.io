@@ -22,8 +22,7 @@ import startseite from "../Images/Homepage/Startseite.jpg"
 
 const Projects : FC = () => {
     return(
-        <Container
-            className="container-sm d-flex flex-column justify-content-center align-items-center text-center p-3">
+        <Container className="container-sm d-flex flex-column justify-content-center align-items-center text-center p-3">
             <ParticlesComponent id="particles"/>
             <h1 className="mb-3 text-white">Projekte</h1>
 

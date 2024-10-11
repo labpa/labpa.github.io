@@ -8,10 +8,11 @@ import "./App.css";
 import Dashboard from "./Pages/Dashboard";
 import AboutMe from "./Pages/AboutMe";
 import Footer from "./Components/Footer";
-import Impressum from "./Components/Impressum";
+import Impressum from "./Pages/Impressum";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Curriculum from "./Pages/Curriculum";
+import Signin from "./Pages/signin";
 
 const App: FC = () => {
     return (
@@ -26,6 +27,7 @@ const App: FC = () => {
                     <Route path="/impressum" element={<Impressum />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/curriculum" element={<Curriculum/> }/>
+                    <Route path="/signin" element={<Signin/>}/>
                 </Routes>
             </div>
 

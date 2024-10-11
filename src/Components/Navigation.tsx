@@ -26,20 +26,9 @@ const Navigation = () => {
                         {/*>*/}
                         {/*    Über Mich*/}
                         {/*</NavLink>*/}
-                        <NavLink
-                            className={"nav-link"}
-                            to={"Curriculum"}
-                            style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}
-                        >
-                            Lebenslauf
-                        </NavLink>
-                        <NavLink
-                            className={"nav-link"}
-                            to={"Projects"}
-                            style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}
-                        >
-                            Projekte
-                        </NavLink>
+                        <NavLink className={"nav-link"} to={"Curriculum"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Lebenslauf</NavLink>
+                        <NavLink className={"nav-link"} to={"Projects"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Projekte</NavLink>
+                        <NavLink className={"nav-link"} to={"Signin"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Login</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
