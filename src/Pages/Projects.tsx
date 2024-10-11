@@ -4,7 +4,6 @@ import ParticlesComponent from "../Components/particles";
 import Image from "react-bootstrap/Image";
 import {Link} from "react-router-dom";
 
-
 // Bilder Fahrtenbuch
 import account from "../Images/Fahrtenbuch/account.jpg";
 import angemeldet from "../Images/Fahrtenbuch/angemeldet.jpg";
@@ -16,6 +15,10 @@ import negativ from "../Images/Abfrageterminal/abfrage-negativ.jpg";
 import positiv from "../Images/Abfrageterminal/abfrage-positiv.jpg";
 import warnung from "../Images/Abfrageterminal/abfrage-warnung.jpg"
 
+//Bilder Homapega
+import projekte from "../Images/Homepage/Projekte.jpg"
+import startseite from "../Images/Homepage/Startseite.jpg"
+
 
 const Projects : FC = () => {
     return(
@@ -24,6 +27,7 @@ const Projects : FC = () => {
             <ParticlesComponent id="particles"/>
             <h1 className="mb-3 text-white">Projekte</h1>
 
+            {/*Abfrage Terminal*/}
             <Card className="text-center" style={{backgroundColor: "transparent", color: "white", maxWidth: "600px"}}>
                 <Card.Body>
                     <Alert style={{backgroundColor: "black", color: "white", border: "1px solid white"}}>
@@ -48,11 +52,17 @@ const Projects : FC = () => {
                         zur anstehenden Schicht mit Hilfe von NFC-Technologie für das Fusion-Festival
                     </Card.Text>
                     <Link to={"https://github.com/labpa/Abfrage-KuKo"}>
-                        <Button style={{width: '350px', backgroundColor:"black", border:"1px solid white", color:"#39868e"}}>GitHub Abfrage Terminal</Button>
+                        <Button style={{
+                            width: '350px',
+                            backgroundColor: "black",
+                            border: "1px solid white",
+                            color: "#39868e"
+                        }}>GitHub Abfrage Terminal</Button>
                     </Link>
                 </Card.Body>
             </Card>
 
+            {/*Fahrtenbuch*/}
             <Card className="text-center" style={{backgroundColor: "transparent", color: "white", maxWidth: "600px"}}>
                 <Card.Body>
                     <Alert style={{backgroundColor: "black", color: "white", border: "1px solid white"}}>
@@ -70,13 +80,48 @@ const Projects : FC = () => {
                         </Carousel.Item>
                     </Carousel>
                     <Card.Text>
-                        Fartenbuch für den Kulturkosmos Müritz e.V, erstellt mit React und Typescript. Übungsprojekt während der Ausbildung.
+                        Fartenbuch für den Kulturkosmos Müritz e.V, erstellt mit React und Typescript. Übungsprojekt
+                        während der Ausbildung.
                     </Card.Text>
                     <Link to={"https://github.com/labpa/Fahrtenbuch-KuKo.git"}>
-                        <Button style={{width: '350px', backgroundColor:"black", border:"1px solid white", color:"#39868e"}}>GitHub Fahrtenbuch</Button>
+                        <Button style={{
+                            width: '350px',
+                            backgroundColor: "black",
+                            border: "1px solid white",
+                            color: "#39868e"
+                        }}>GitHub Fahrtenbuch</Button>
                     </Link>
                 </Card.Body>
             </Card>
+
+            {/*Homepage*/}
+            <Card className="text-center" style={{backgroundColor: "transparent", color: "white", maxWidth: "600px"}}>
+                <Card.Body>
+                    <Alert style={{backgroundColor: "black", color: "white", border: "1px solid white"}}>
+                        <Alert.Heading>Homepage</Alert.Heading>
+                    </Alert>
+                    <Carousel>
+                        <Carousel.Item>
+                            <Image src={projekte} alt="Start Screen" fluid/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Image src={startseite} alt="Positive Outcome" fluid/>
+                        </Carousel.Item>
+                    </Carousel>
+                    <Card.Text>
+                        Homepage mit Lebenslauf und Übersicht aktueller Projekte.
+                    </Card.Text>
+                    <Link to={"https://github.com/labpa/labpa.github.io"}>
+                        <Button style={{
+                            width: '350px',
+                            backgroundColor: "black",
+                            border: "1px solid white",
+                            color: "#39868e"
+                        }}>GitHub Homepage</Button>
+                    </Link>
+                </Card.Body>
+            </Card>
+
         </Container>
     )
 }
