@@ -4,9 +4,6 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const supabaseUrl = process.env.REACT_APP_SUPABASE_URL || '';
 const supabaseApiKey = process.env.REACT_APP_SUPABASE_API_KEY || '';
 
-console.log("URL ->" + supabaseUrl);
-console.log("Key ->" + supabaseApiKey);
-
 if (!supabaseUrl || !supabaseApiKey) {
     throw new Error("Supabase URL oder API-Key sind nicht definiert.");
 }
