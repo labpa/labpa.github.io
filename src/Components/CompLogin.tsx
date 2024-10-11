@@ -1,18 +1,31 @@
 import React, {FC, useState} from "react";
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {Button, Col, Container, FloatingLabel, FormControl, Row} from "react-bootstrap";
+import {useLoginUserMutation} from "../api/authApi";
+import {useAppDispatch} from "../app/hooks";
+import {setCredentials} from "../features/auth/authSlice";
 
 const CompLogin : FC = () => {
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
     const navigate = useNavigate();
 
-    console.log(email);
-    console.log(password);
+    const [login] = useLoginUserMutation();
+    const dispatch = useAppDispatch();
+    const [error, setError] = useState<string>();
+
 
     // Todo -> Funktion
-    const handleLoginEvent = () => {
-        console.log("Hallo Welt");
+    const handleLoginEvent = async (e: any) => {
+        e?.preventDefault();
+        login({ email, password}).unwrap().then((response)=> {
+            dispatch(setCredentials(response));
+            // navigate("/onlinefahrtenbuch");
+            console.log("angemeldet");
+        }).catch(error =>{
+            console.error(error);
+            setError("Anmeldung fehlgeschlagen! Bitte überprüfe deine E-Mail-Adresse und dein Passwort.");
+        });
     }
 
 
@@ -45,6 +58,11 @@ const CompLogin : FC = () => {
                                 color: '#39868e'
                             }} type="submit">Anmelden</Button>
                         </div>
+                        {error && (
+                            <div className="alert alert-danger">
+                                {error} <Link to={"/neuespasswort"}>Passwort Vergessen?</Link>{" "}
+                            </div>
+                        )}
                     </form>
 
                 </Col>
