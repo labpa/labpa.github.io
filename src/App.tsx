@@ -15,6 +15,7 @@ import Curriculum from "./Pages/Curriculum";
 import Signin from "./Pages/signin";
 import ProtectedRoute from "./Pages/protection/ProtectedRoute";
 import Angemeldet from "./Pages/Angemeldet";
+import Buchhaltung from "./Pages/Buchhaltung";
 
 const App: FC = () => {
     return (
@@ -34,6 +35,7 @@ const App: FC = () => {
                     //Ab hier nur nach Login
                     <Route element={<ProtectedRoute/>}>
                         <Route path={"/angemeldet"} element={<Angemeldet/>}/>
+                        <Route path={"/buchhaltung"} element={<Buchhaltung/>}/>
 
                     </Route>
 
