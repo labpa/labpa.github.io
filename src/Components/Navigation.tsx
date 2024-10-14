@@ -47,19 +47,14 @@ const Navigation = () => {
                     <Navbar.Toggle aria-controls={"basic-navbar-nav"}/>
                     <Navbar.Collapse id={"basic-navbar-nav"}>
                         <Nav className={"me-auto"}>
-                            {/*<NavLink*/}
-                            {/*    className={"nav-link"}*/}
-                            {/*    to={"AboutMe"}*/}
-                            {/*    style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}*/}
-                            {/*>*/}
-                            {/*    Über Mich*/}
-                            {/*</NavLink>*/}
+                            {/*<NavLink className={"nav-link"} to={"AboutMe"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Über Mich</NavLink>*/}
                             <NavLink className={"nav-link"} to={"Curriculum"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Lebenslauf</NavLink>
                             <NavLink className={"nav-link"} to={"Projects"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Projekte</NavLink>
                             <NavLink className={"nav-link"} to={"Angemeldet"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Angemeldet</NavLink>
                             <NavLink className={"nav-link"} to={"Buchhaltung"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Buchhaltung</NavLink>
-                            <Status />
-
+                            <Nav className={"ms-auto"}> {/* This ensures the Status is aligned to the right */}
+                                <Status />
+                            </Nav>
                         </Nav>
                     </Navbar.Collapse>
 

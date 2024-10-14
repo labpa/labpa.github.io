@@ -1,8 +1,7 @@
 import { configureStore} from '@reduxjs/toolkit'
 import authReducer from "../features/auth/authSlice"
 import {supabaseAuthApi} from "../api/authApi";
-
-
+import {supabaseApiBuchhaltung} from "../api/buchhaltungApi";
 
 
 export const store = configureStore({
@@ -10,11 +9,12 @@ export const store = configureStore({
 
         auth: authReducer,
         [supabaseAuthApi.reducerPath]: supabaseAuthApi.reducer,
+        [supabaseApiBuchhaltung.reducerPath]: supabaseApiBuchhaltung.reducer,
 
 
     },
     middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat(supabaseAuthApi.middleware),
+        getDefaultMiddleware().concat(supabaseApiBuchhaltung.middleware, supabaseAuthApi.middleware),
 
     devTools: true,
 })
