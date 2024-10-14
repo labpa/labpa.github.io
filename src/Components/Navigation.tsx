@@ -1,6 +1,7 @@
 import {Container, Nav, Navbar} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
 import {useAppSelector} from "../app/hooks";
+import Status from "./Status";
 
 const Navigation = () => {
     const {userinfo} = useAppSelector((state) => state.auth);
@@ -57,9 +58,14 @@ const Navigation = () => {
                             <NavLink className={"nav-link"} to={"Projects"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Projekte</NavLink>
                             <NavLink className={"nav-link"} to={"Angemeldet"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Angemeldet</NavLink>
                             <NavLink className={"nav-link"} to={"Buchhaltung"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Buchhaltung</NavLink>
+                            <Nav className={"ms-auto"}> {/* This ensures the Status is aligned to the right */}
+                                <Status />
+                            </Nav>
                         </Nav>
                     </Navbar.Collapse>
+
                 </Container>
+
             </Navbar>
         )
     }

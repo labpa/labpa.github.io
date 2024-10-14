@@ -16,13 +16,13 @@ import Signin from "./Pages/signin";
 import ProtectedRoute from "./Pages/protection/ProtectedRoute";
 import Angemeldet from "./Pages/Angemeldet";
 import Buchhaltung from "./Pages/Buchhaltung";
+import Status from "./Components/Status";
 
 const App: FC = () => {
     return (
         <div className="d-flex flex-column min-vh-100"> {/* Flex Container für das gesamte Layout */}
             <div className="flex-grow-1"> {/* Container für den Inhalt */}
                 <Navigation />
-
                 <Routes>
                     <Route path="/" element={<Dashboard />} />
                     <Route path="/aboutme" element={<AboutMe />} />
