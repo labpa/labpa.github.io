@@ -14,6 +14,7 @@ const Status : FC = () => {
         dispatch(logout());
         navigate("/");
     }
+    console.log(userinfo.user.email);
 
     return(
         <Container>
@@ -22,7 +23,7 @@ const Status : FC = () => {
                 width: '100px',
                 backgroundColor: 'black',
                 border: '1px solid white',
-                color: '#39868e'
+                color: 'white'
             }} onClick={handleLogout}>Logout</Button>
         </Container>
     )
