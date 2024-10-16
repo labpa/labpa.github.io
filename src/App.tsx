@@ -11,12 +11,12 @@ import Footer from "./Components/Footer";
 import Impressum from "./Pages/Impressum";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
-import Curriculum from "./Pages/Curriculum";
-import Signin from "./Pages/signin";
 import ProtectedRoute from "./Pages/protection/ProtectedRoute";
 import Angemeldet from "./Pages/Angemeldet";
 import Buchhaltung from "./Pages/Buchhaltung";
 import Status from "./Components/Status";
+import Login from "./Pages/Login";
+import Lebenslauf from "./Pages/Lebenslauf";
 
 const App: FC = () => {
     return (
@@ -29,8 +29,8 @@ const App: FC = () => {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/impressum" element={<Impressum />} />
                     <Route path="/contact" element={<Contact />} />
-                    <Route path="/curriculum" element={<Curriculum/> }/>
-                    <Route path="/signin" element={<Signin/>}/>
+                    <Route path="/lebenslauf" element={<Lebenslauf/> }/>
+                    <Route path="/login" element={<Login/>}/>
 
                     //Ab hier nur nach Login
                     <Route element={<ProtectedRoute/>}>

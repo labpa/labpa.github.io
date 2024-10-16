@@ -3,7 +3,7 @@ import {Container} from "react-bootstrap";
 import ParticlesComponent from "../Components/particles";
 import CompLogin from "../Components/CompLogin";
 
-const signin : FC = () => {
+const login : FC = () => {
     return(
         <Container
             className="container-sm d-flex flex-column justify-content-center align-items-center text-center p-3">
@@ -13,4 +13,4 @@ const signin : FC = () => {
     )
 }
 
-export default signin
+export default login

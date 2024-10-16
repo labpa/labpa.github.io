@@ -28,7 +28,7 @@ const ProtectedRoute : FC = () => {
                     <div className={"d-flex justify-content-center"}>
                         <div className={"row"}>
                             <div className={"g-2 mb-3"}>
-                                <Link to={"/signin"}>
+                                <Link to={"/login"}>
                                     <Button variant={"outline-dark"}>
                                         Login
                                     </Button>
