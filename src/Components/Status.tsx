@@ -14,7 +14,9 @@ const Status : FC = () => {
         dispatch(logout());
         navigate("/");
     }
-    console.log(userinfo.user.email);
+
+    //ausgabe Konsole User
+    // console.log(userinfo.user.email);
 
     return(
         <Container>

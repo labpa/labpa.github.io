@@ -1,7 +1,10 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 
+
 const supabaseUrl = process.env.REACT_APP_SUPABASE_URL || '';
 const supabaseApiKey = process.env.REACT_APP_SUPABASE_API_KEY || '';
+
+
 
 
 
@@ -29,18 +32,18 @@ const supabaseApiBuchhaltung = createApi({
             return headers;
         },
     }),
-    tagTypes: ['ausgaben', 'benutzer', 'einnahmen', 'kategorie', 'konten', 'Privat_geschaeftlich', 'projekte', 'transaktionen'],
+    tagTypes: ['testen'],
     endpoints: (builder) => ({
         // ausgaben
-        getAusgaben: builder.query({
-            query: () => 'rest/v1/ausgaben',
-            providesTags: ['ausgaben']
+        getTesten: builder.query({
+            query: () => 'rest/v1/testen',
+            providesTags: ['testen']
         }),
     })
 })
 
 export const {
-    useGetAusgabenQuery,
+    useGetTestenQuery,
 } = supabaseApiBuchhaltung;
 
 export {supabaseApiBuchhaltung};
