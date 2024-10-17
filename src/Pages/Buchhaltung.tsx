@@ -2,14 +2,16 @@ import React, { FC, useState } from "react";
 import { Button, Col, Container, FloatingLabel, FormControl, Row, Table } from "react-bootstrap"; // Import Table from react-bootstrap
 import {
     useCreateTransaktionenMutation, useGetArtQuery,
-    useGetTransaktionQuery
+    useGetTransaktionQuery, useRemoveTransaktionMutation
 } from "../api/buchhaltungApi";
 import Select from "react-select";
+import dayjs from "dayjs";
 
 const Buchhaltung: FC = () => {
     // Transaktion
     const { data: transaktion } = useGetTransaktionQuery('');
     const [createTransaktion] = useCreateTransaktionenMutation();
+    const [removeTransaktion] = useRemoveTransaktionMutation();
     const [formErrorTransaktion, setFormErrorTransaktion] = useState<string | null>(null);
 
     const [datum, setDatum] = useState<string>("");
@@ -70,17 +72,22 @@ const Buchhaltung: FC = () => {
                     <tbody>
                     {transaktion?.map((transaktion: any) => (
                         <tr key={transaktion.transaktion_id}>
-                            <td>{transaktion.datum}</td>
+                            <td>{dayjs(transaktion.datum).format("D.M.YYYY")}</td>
                             <td>{transaktion.beschreibung}</td>
                             <td>{transaktion.betrag.toFixed(2)} € <br /></td>
                             <td>{art?.find((a:any) => a.art_id === transaktion.art_id)?.art}</td>
+                            <td>
+                                <Button variant={"outline-dark"} style={{ width: '200px' }} onClick={() => removeTransaktion(transaktion.transaktion_id)}>
+                                    Löschen
+                                </Button>
+                            </td>
                         </tr>
                     ))}
                     </tbody>
                 </Table>
 
                 <form onSubmit={handleSubmitTransaktion}>
-                    <div><h2>Test</h2></div>
+                    <div><h2>Transaktion</h2></div>
                     <Container>
                         <Row className={"g-2 mb-3"}>
                             <Col>

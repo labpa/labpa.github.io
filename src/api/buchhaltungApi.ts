@@ -33,15 +33,26 @@ const supabaseApiBuchhaltung = createApi({
     endpoints: (builder) => ({
 
         //Transaktionen
+        //Abfrage
         getTransaktion:builder.query({
             query: () => 'rest/v1/Transaktionen',
             providesTags: ['Transaktionen']
         }),
+        //Hinzufügen
         createTransaktionen: builder.mutation({
             query: ({payload}) => ({
                 url: 'rest/v1/Transaktionen',
                 method: 'post',
                 body: {...payload}
+            }),
+            invalidatesTags: ['Transaktionen']
+        }),
+
+        //Löschen
+        removeTransaktion: builder.mutation({
+            query: (transaktion_id) => ({
+                url: `rest/v1/Transaktionen?transaktion_id=eq.${transaktion_id}`,
+                method: 'delete',
             }),
             invalidatesTags: ['Transaktionen']
         }),
@@ -61,6 +72,7 @@ const supabaseApiBuchhaltung = createApi({
 export const {
     useGetTransaktionQuery,
     useCreateTransaktionenMutation,
+    useRemoveTransaktionMutation,
     useGetArtQuery,
 
 } = supabaseApiBuchhaltung;
