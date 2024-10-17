@@ -29,7 +29,7 @@ const supabaseApiBuchhaltung = createApi({
             return headers;
         },
     }),
-    tagTypes: ['Transaktionen','Art'],
+    tagTypes: ['Transaktionen','Art', 'Laden'],
     endpoints: (builder) => ({
 
         //Transaktionen
@@ -47,7 +47,6 @@ const supabaseApiBuchhaltung = createApi({
             }),
             invalidatesTags: ['Transaktionen']
         }),
-
         //Löschen
         removeTransaktion: builder.mutation({
             query: (transaktion_id) => ({
@@ -63,6 +62,14 @@ const supabaseApiBuchhaltung = createApi({
             providesTags: ['Art']
         }),
 
+        //Laden
+        getLaden:builder.query({
+            query: () => 'rest/v1/Laden',
+            providesTags: ['Laden']
+        })
+
+        //Projekte
+
 
 
 
@@ -74,6 +81,7 @@ export const {
     useCreateTransaktionenMutation,
     useRemoveTransaktionMutation,
     useGetArtQuery,
+    useGetLadenQuery
 
 } = supabaseApiBuchhaltung;
 
