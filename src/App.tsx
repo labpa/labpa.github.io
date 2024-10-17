@@ -31,11 +31,12 @@ const App: FC = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/lebenslauf" element={<Lebenslauf/> }/>
                     <Route path="/login" element={<Login/>}/>
+                    <Route path={"/buchhaltung"} element={<Buchhaltung/>}/>
 
                     //Ab hier nur nach Login
                     <Route element={<ProtectedRoute/>}>
                         <Route path={"/angemeldet"} element={<Angemeldet/>}/>
-                        <Route path={"/buchhaltung"} element={<Buchhaltung/>}/>
+                        {/*<Route path={"/buchhaltung"} element={<Buchhaltung/>}/>*/}
 
                     </Route>
 

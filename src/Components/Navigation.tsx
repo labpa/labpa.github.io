@@ -34,6 +34,8 @@ const Navigation = () => {
                             <NavLink className={"nav-link"} to={"Lebenslauf"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Lebenslauf</NavLink>
                             <NavLink className={"nav-link"} to={"Projects"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Projekte</NavLink>
                             <NavLink className={"nav-link"} to={"Login"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Login</NavLink>
+                            {/*todo!!! -> löschen*/}
+                            <NavLink className={"nav-link"} to={"Buchhaltung"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Buchhaltung</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
