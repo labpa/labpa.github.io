@@ -18,7 +18,13 @@ const Buchhaltung: FC = () => {
 
     //Art
     const {data: art} = useGetArtQuery('');
-    console.log(art);
+    const [auswahl, setAuswahl] = useState<string>("");
+
+
+    //Auswahl Art der Transaktion
+    const handleChangeArt = (selectedOption: any) => {
+        setAuswahl(selectedOption.value)
+    }
 
 
     //Handle Submit Transaktion
@@ -34,7 +40,8 @@ const Buchhaltung: FC = () => {
             payload: {
                 datum: datum,
                 betrag: Number(betrag),
-                beschreibung: beschreibung
+                beschreibung: beschreibung,
+                art_id: auswahl
             }
         });
 
@@ -94,6 +101,8 @@ const Buchhaltung: FC = () => {
                                     />
                                 </FloatingLabel>
                             </Col>
+                        </Row>
+                        <Row>
                             <Col>
                                 <FloatingLabel label={"Datum"}>
                                     <FormControl
@@ -110,15 +119,11 @@ const Buchhaltung: FC = () => {
                                         styles={{
                                             menu: provided => ({...provided, zIndex: 9999})
                                         }}
-                                        options={art?.map((a:any)=> ({value: a.art, label: `${a.art}`}))}
+                                        onChange={handleChangeArt}
+                                        options={art?.map((a:any)=> ({value: a.art_id, label: `${a.art}`}))}
 
                                 />
                             </Col>
-
-
-
-
-
                         </Row>
                         <div className={"g-2 mb-3"}>
                             <Button variant={"outline-dark"} type={"submit"}>Hinzufügen</Button>
