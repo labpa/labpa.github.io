@@ -29,7 +29,7 @@ const Impressum: FC = () => {
             <section>
                 <h2>Kontakt</h2>
                 <p>
-                    E-Mail: <a href="mailto:pbienenstein@posteo.de">pbienenstein@posteo.de</a>
+                    E-Mail: <a href="mailto:kontakt@pbienenstein.de">kontakt@pbienenstein.de</a>
                 </p>
             </section>
 
