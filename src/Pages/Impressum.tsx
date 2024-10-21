@@ -29,8 +29,9 @@ const Impressum: FC = () => {
             <section>
                 <h2>Kontakt</h2>
                 <p>
-                    E-Mail: <a href="mailto:kontakt@pbienenstein.de">kontakt@pbienenstein.de</a>
+                    E-Mail: <a href="mailto:kontakt@pbienenstein.de" aria-label="E-Mail an kontakt@pbienenstein.de senden">kontakt@pbienenstein.de</a>
                 </p>
+
             </section>
 
             <section>

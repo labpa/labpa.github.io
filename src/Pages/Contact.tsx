@@ -12,7 +12,9 @@ const Contact : FC = () => {
             <ParticlesComponent id="particles"/>
             <h1 className="mb-3 text-white">Kontakt</h1>
             <h2 className="mb-4 text-white">Der einfachste Weg mich zu erreichen ist per Email.</h2>
-            <h2 className="mb-4 text-white">kontakt@pbienenstein.de</h2>
+            <h2 className={"mb-4 text-white"}>
+                E-Mail: <a href="mailto:kontakt@pbienenstein.de" aria-label="E-Mail an kontakt@pbienenstein.de senden">kontakt@pbienenstein.de</a>
+            </h2>
 
         </Container>
     )
