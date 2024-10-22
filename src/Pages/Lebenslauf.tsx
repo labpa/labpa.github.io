@@ -15,18 +15,43 @@ const Corriculum: FC = () => {
                     <Image src={foto} rounded style={{width: '250px', height: '300px'}}/>
                 </div>
                 <div className="ms-3">
-                    <h1 className="mb-3 text-white text-center" style={{fontSize: "65px"}}>Pascal Bienenstein</h1>
+                    <h1 className="mb-3 text-white text-center" style={{fontSize: "65px", backgroundColor: "rgba(000, 000, 000, 0.7)"}}>Pascal Bienenstein</h1>
                 </div>
             </div>
             <hr style={{borderColor: "#39868E"}} className="border-end border-2 opacity-75"/>
 
 
             <div className="container-sm content">
-                <Row>
+                <Row style={{backgroundColor: "rgba(000, 000, 000, 0.7)"}}>
+                    <Col>
+                        <h2>Sprachen</h2>
+                        <ul>
+                            <li>
+                                <h3>JavaScript</h3>
+                            </li>
+                            <li>
+                                <h3>TypeScript</h3>
+                            </li>
+                            <li>
+                                <h3>Java</h3>
+                            </li>
+                            <li>
+                                <h3>C#</h3>
+                            </li>
+                            <li>
+                                <h3>SQL</h3>
+                            </li>
+                            <li>
+                                <h3>HTML</h3>
+                            </li>
+                            <li>
+                                <h3>CSS</h3>
+                            </li>
+                        </ul>
+                    </Col>
+
                     <Col>
                         <h2>Fähigkeiten</h2>
-                    </Col>
-                    <Col>
                         <ul>
                             <li>
                                 <h3>Entwicklung von progressiven Web-Applikationen (PWA) mit folgenden Technologien</h3>
@@ -35,22 +60,7 @@ const Corriculum: FC = () => {
                                 <h3>React</h3>
                             </li>
                             <li>
-                                <h3>TypeScript</h3>
-                            </li>
-                            <li>
-                                <h3>JavaScript</h3>
-                            </li>
-                            <li>
-                                <h3>HTML</h3>
-                            </li>
-                            <li>
-                                <h3>CSS</h3>
-                            </li>
-                            <li>
                                 <h3>Bootstrap</h3>
-                            </li>
-                            <li>
-                                <h3>SQL</h3>
                             </li>
                             <li>
                                 <h3>MariaDB</h3>
@@ -58,23 +68,16 @@ const Corriculum: FC = () => {
                             <li>
                                 <h3>Supabase</h3>
                             </li>
-                            <li>
-                                <h3>Java</h3>
-                            </li>
-                            <li>
-                                <h3>C#</h3>
-                            </li>
-
-
                         </ul>
-
-
                     </Col>
+
+
+
                 </Row>
                 <hr style={{borderColor: "#39868E"}} className="border-end border-2 opacity-75"/>
 
 
-                <Row>
+                <Row style={{backgroundColor: "rgba(000, 000, 000, 0.7)"}}>
                     <Col>
                         <h2>Berufserfahrung</h2>
                     </Col>
@@ -100,7 +103,7 @@ const Corriculum: FC = () => {
                     </Col>
                 </Row>
                 <hr style={{borderColor: "#39868E"}} className="border-end border-2 opacity-75"/>
-                <Row>
+                <Row style={{backgroundColor: "rgba(000, 000, 000, 0.7)"}}>
                     <Col>
                         <h2>Ausbildung</h2>
                     </Col>
