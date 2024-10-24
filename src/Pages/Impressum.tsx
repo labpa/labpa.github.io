@@ -10,8 +10,8 @@ const Impressum: FC = () => {
                 <h2>Geltungsbereich</h2>
                 <p>Dieses Impressum gilt für:</p>
                 <p>
-                    <a href="https://labpa.github.io/" target="_blank" rel="noopener noreferrer">
-                        https://labpa.github.io/
+                    <a href="https://pbienenstein.de" target="_blank" rel="noopener noreferrer">
+                        https://pbienenstein.de
                     </a>
                 </p>
             </section>
@@ -28,9 +28,7 @@ const Impressum: FC = () => {
 
             <section>
                 <h2>Kontakt</h2>
-                <p>
-                    E-Mail: <a href="mailto:kontakt@pbienenstein.de" aria-label="E-Mail an kontakt@pbienenstein.de senden">kontakt@pbienenstein.de</a>
-                </p>
+                <p>E-Mail: kontakt@pbienenstein.de</p>
 
             </section>
 
