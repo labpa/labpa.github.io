@@ -6,6 +6,7 @@ import Image from "react-bootstrap/Image";
 
 
 const Corriculum: FC = () => {
+    console.log("Hire ME!");
     return (
         <Container className="container-sm p-3" style={{color:"white"}}>
             <ParticlesComponent id="particles"/>
@@ -88,7 +89,7 @@ const Corriculum: FC = () => {
                             </li>
                             <li>
                                 <h3>2016 - 2022 Selbstständiger Monteur - Internationale Umsetzung von Spezialmontagen
-                                    für Film, Theather und Festivals. </h3>
+                                    für Film, Theater und Festivals. </h3>
                             </li>
                             <li>
                                 <h3>2015 - 2019 Gästebetreuer im Sicherheitsdienst – Internationaler Club, Berlin </h3>
