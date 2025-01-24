@@ -44,10 +44,12 @@ const Navigation = () => {
                     <Navbar.Collapse id={"basic-navbar-nav"}>
                         <Nav className={"me-auto"}>
                             {/*<NavLink className={"nav-link"} to={"AboutMe"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Über Mich</NavLink>*/}
-                            <NavLink className={"nav-link"} to={"Curriculum"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Lebenslauf</NavLink>
+                            <NavLink className={"nav-link"} to={"Lebenslauf"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Lebenslauf</NavLink>
                             <NavLink className={"nav-link"} to={"Projects"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Projekte</NavLink>
                             <NavLink className={"nav-link"} to={"Angemeldet"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Angemeldet</NavLink>
+                            <NavLink className={"nav-link"} to={"Zeiterfassung"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Zeiterfassung</NavLink>
                             <NavLink className={"nav-link"} to={"Buchhaltung"} style={({ isActive }) => isActive ? activeLinkStyle : linkStyle}>Buchhaltung</NavLink>
+
                             <Nav className={"ms-auto"}> {/* This ensures the Status is aligned to the right */}
                                 <Status />
                             </Nav>

@@ -29,7 +29,7 @@ const supabaseApiBuchhaltung = createApi({
             return headers;
         },
     }),
-    tagTypes: ['Transaktionen','Art', 'Laden'],
+    tagTypes: ['Transaktionen','Art', 'Laden', 'trigger'],
     endpoints: (builder) => ({
 
         //Transaktionen
@@ -66,9 +66,24 @@ const supabaseApiBuchhaltung = createApi({
         getLaden:builder.query({
             query: () => 'rest/v1/Laden',
             providesTags: ['Laden']
-        })
+        }),
 
-        //Projekte
+        //Zeiterfassung
+
+        //trigger
+        getTrigger:builder.query({
+            query:() => 'rest/v1/trigger',
+            providesTags: ['trigger']
+        }),
+
+        createTrigger: builder.mutation({
+            query: ({payload}) => ({
+                url: 'rest/v1/trigger',
+                method: 'post',
+                body: {...payload}
+            }),
+            invalidatesTags: ['trigger']
+        })
 
 
 
@@ -81,7 +96,9 @@ export const {
     useCreateTransaktionenMutation,
     useRemoveTransaktionMutation,
     useGetArtQuery,
-    useGetLadenQuery
+    useGetLadenQuery,
+    useGetTriggerQuery,
+    useCreateTriggerMutation,
 
 } = supabaseApiBuchhaltung;
 

@@ -17,6 +17,7 @@ import Buchhaltung from "./Pages/Buchhaltung";
 import Status from "./Components/Status";
 import Login from "./Pages/Login";
 import Lebenslauf from "./Pages/Lebenslauf";
+import Zeiterfassung from "./Pages/Zeiterfassung";
 
 const App: FC = () => {
     return (
@@ -37,6 +38,7 @@ const App: FC = () => {
                     <Route element={<ProtectedRoute/>}>
                         <Route path={"/angemeldet"} element={<Angemeldet/>}/>
                         <Route path={"/buchhaltung"} element={<Buchhaltung/>}/>
+                        <Route path={"/zeiterfassung"} element={<Zeiterfassung/>}/>
 
                     </Route>
 

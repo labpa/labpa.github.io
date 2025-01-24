@@ -15,6 +15,7 @@ const Buchhaltung: FC = () => {
     const [formErrorTransaktion, setFormErrorTransaktion] = useState<string | null>(null);
 
 
+
     const [datumTransaktion, setDatumTransaktion] = useState<string>("");
     const [betrag, setBetrag] = useState<string>("");
     const [beschreibung, setBeschreibung] = useState<string>("");
